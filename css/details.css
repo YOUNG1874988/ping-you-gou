@@ -1,0 +1,427 @@
+.crumb_wrap {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.crumb_wrap span {
+    margin: 0 10px 0;
+}
+
+.preview_wrap {
+    width: 400px;
+    height: 560px;
+}
+
+.preview_img {
+    width: 398px;
+    height: 398px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.mask {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    cursor: move;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.big {
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: -510px;
+    z-index: 888;
+    position: relative;
+}
+
+.preview_img img {
+    width: 100%;
+}
+
+.preview_img .big img {
+    /* width: 800px; */
+    /* height: 800px; */
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.preview_list {
+    position: relative;
+    margin-top: 68px;
+    height: 68px;
+}
+
+.preview_list ul {
+    width: 272px;
+    height: 68px;
+    margin: 0 auto 0;
+}
+
+.preview_list li {
+    float: left;
+    width: 64px;
+    height: 64px;
+    border: 2px solid transparent;
+}
+
+.preview_list li.current {
+    border: 2px solid red;
+}
+
+.preview_list li img {
+    width: 100%;
+}
+
+.list_preview,
+.list_next {
+    position: absolute;
+}
+
+.list_preview {
+    top: 15px;
+    left: 15px;
+}
+
+.list_next {
+    top: 15px;
+    right: 15px;
+}
+
+.moreinfo {
+    margin-top: 10px;
+}
+
+.moreinfo .left {
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+.moreinfo .right {
+    margin-left: 20px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?q2lkuv');
+    src: url('fonts/icomoon.eot?q2lkuv#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?q2lkuv') format('truetype'), url('fonts/icomoon.woff?q2lkuv') format('woff'), url('fonts/icomoon.svg?q2lkuv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.moreinfo span {
+    font-family: 'icomoon';
+}
+
+.iteminfo_wrap {
+    width: 718px;
+}
+
+.sku_name {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sku_news {
+    height: 32px;
+    color: red;
+}
+
+.summary_price,
+.summary_promotion {
+    position: relative;
+    padding: 10px 0;
+    background-color: #fee9eb;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+    line-height: 36px;
+}
+
+.summary dl {
+    overflow: hidden;
+}
+
+.summary dt {
+    width: 60px;
+    padding-left: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.summary_price a {
+    color: #e12228;
+}
+
+.remark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.summary_promotion {
+    padding-top: 0;
+}
+
+.summary_promotion dd {
+    width: 450px;
+    line-height: 36px;
+}
+
+.summary_promotion em {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    background-color: #c81623;
+    line-height: 22px;
+    color: white;
+    text-align: center;
+}
+
+.summary_support {
+    line-height: 36px;
+}
+
+.delivery dd {
+    width: 350px;
+    font-family: 'icomoon';
+}
+
+.summary .delivery {
+    background: none;
+}
+
+.choose_color,
+.choose_rom,
+.choose_version,
+.purchase_method,
+.choose_suit {
+    margin: 10px 0;
+}
+
+.choose_color a,
+.choose_version a,
+.choose_rom a {
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 41px;
+    border: 1px solid transparent;
+    margin: 0 5px;
+}
+
+.choose_suit a,
+.purchase_method a {
+    display: inline-block;
+    width: 120px;
+    height: 41px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 41px;
+    border: 1px solid transparent;
+    margin: 0 5px;
+}
+
+.summary a.current {
+    border: 1px solid red;
+}
+
+.choose_btns {
+    margin-top: 20px;
+}
+
+.choose_amount {
+    position: relative;
+    width: 50px;
+    height: 46px;
+    background-color: pink;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.choose_amount input {
+    width: 33px;
+    height: 44px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.choose_amount a {
+    width: 20px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.choose_amount .add {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.choose_amount .reduce {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: not allowed;
+}
+
+.product_detail {
+    margin-bottom: 10px;
+}
+
+.addcar {
+    float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.aside {
+    float: left;
+    width: 208px;
+    border: 1px solid #ccc;
+}
+
+.tab_list li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+}
+
+
+/* 鼠标点击变化：去掉下边框，背景变为白色 */
+
+.tab_list li.current {
+    background-color: white;
+    border-bottom: none;
+    color: #c81623;
+}
+
+.first_tab {
+    width: 104px;
+}
+
+.second_tab {
+    width: 103px;
+    border-left: 1px solid #ccc;
+}
+
+.tab_con {
+    padding: 0 10px;
+}
+
+.tab_con li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.tab_con li img {
+    width: 100%;
+}
+
+.tab_con li h5 {
+    /* 超出的文字省略号形式； */
+    /* 
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    
+    
+    */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: normal;
+}
+
+.tab_con .aside_price {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.aside_addcar {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 88px;
+    height: 26px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 26px;
+}
+
+.detail {
+    float: right;
+    width: 978px;
+    border: 1px solid #ccc;
+}
+
+.detail_tab_list {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.detail_tab_list li {
+    float: left;
+    padding: 0 20px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail_tab_list li.current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.detail_tab_con {
+    padding-top: 30px;
+}
+
+.detail_tab_con .item li {
+    margin: 5px 40px;
+}
+
+.para p {
+    float: right;
+    font-weight: 700;
+    font-family: 'icomoon';
+}
